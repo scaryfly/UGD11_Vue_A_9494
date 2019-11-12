@@ -12,7 +12,7 @@
       <v-list-item>
         <v-list-item-content>
         <v-list-item-title class="title">
-          Modul 11 |9486| :))
+          Modul 11 |9494|
         </v-list-item-title>
         <v-list-item-subtitle>
           Vue Consume REST API

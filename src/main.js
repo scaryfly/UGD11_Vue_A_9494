@@ -6,7 +6,7 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 Vue.prototype.$http = Axios;
-Vue.prototype.$apiUrl = 'http://localhost/modul11/index.php';
+Vue.prototype.$apiUrl = 'http://localhost:8080/modul11/index.php';
 
 
 new Vue({
