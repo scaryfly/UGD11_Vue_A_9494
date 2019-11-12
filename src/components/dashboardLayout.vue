@@ -26,11 +26,12 @@
         v-for="item in items"
         :key="item.title"
         link
+        @click="$router.push(item.path)"
         >
+       
         <v-list-item-icon>
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>
-        
         <v-list-item-content>
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item-content>
@@ -76,7 +77,8 @@
       return { 
         drawer: null, 
         items: [ 
-          { title: 'User Controller', icon: 'mdi-human-male' }, 
+          { title: 'User Controller', icon: 'mdi-human-male',path: '/user'},
+          { title: 'Sparepart Controller', icon: 'mdi-settings',path: '/sparepart'}
         ], 
       } 
     }, 

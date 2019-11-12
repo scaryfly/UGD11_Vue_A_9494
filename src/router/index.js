@@ -1,6 +1,5 @@
 import Vue from 'vue' 
 import Router from 'vue-router' 
-
 const DashboardLayout = () => import(/* webpackChunkName: "dashboard" */ '../components/dashboardLayout.vue') 
 
 function loadView(view) {
@@ -14,9 +13,14 @@ const routes = [
         children: [ 
             { 
                 name: 'UserController', 
-                path: '', 
+                path: '/user', 
                 component: loadView('userController') 
-            } 
+            },
+            { 
+                name: 'SparepartController', 
+                path: '/sparepart', 
+                component: loadView('sparepartController') 
+            }
         ] 
     }, 
 ] 
